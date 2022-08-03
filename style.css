@@ -1,0 +1,175 @@
+/* # Front-end Style Guide
+
+- Mobile: 375px
+- Desktop:
+
+- Dark desaturated blue (card background):
+- Soft violet (accent):hsl(277, 64%, 61%)
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* root,HTML,BODY styles */
+:root {
+    --violet: hsl(277, 64%, 61%);
+}
+html,body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    margin: 0;
+}
+/* Mobile,Desktop Images */
+.mobile-image img{
+    width: 300px;
+    height: 220px;
+    border-radius: 10px 10px 0 0;
+    filter: invert(10%) sepia(40%)  hue-rotate(230deg) saturate(500%);
+}
+.desktop-image img{
+    width: 540px;
+    height: 445px;
+    border-radius: 0px 10px 10px 0;
+    filter: invert(10%) sepia(40%)  hue-rotate(230deg) saturate(500%);
+}
+/* 375px styles */
+.card {
+    width: 300px;
+    height: 710px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    transition: 500ms;
+    box-shadow:
+    0px 1px 2px 4px rgba(0, 0, 0, 0.1),
+    1px 2px 4px 8px rgba(0, 0, 0, 0.1),
+    2px 4px 8px 16px rgba(0, 0, 0, 0.1),
+    4px 8px 16px 32px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+    box-shadow:
+    0px 1px 2px 4px rgba(0, 0, 0, 0.2),
+    1px 2px 4px 8px rgba(0, 0, 0, 0.2),
+    2px 4px 8px 16px rgba(0, 0, 0, 0.2),
+    4px 8px 16px 32px rgba(0, 0, 0, 0.2);
+}
+.details {
+    margin: 30px;
+}
+.info h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+}
+.info span {
+    color: var(--violet);
+}
+.info p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 45px;
+}
+.stats h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+    font-family: Inter;
+    font-weight: 700;
+}
+.stats p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+.stats .companies {
+    margin-bottom: 30px;
+}
+.stats .template {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width : 0px) and (max-width : 1150px) {
+    .desktop-image {
+        display: none;
+    }
+    .stats {
+        text-align: center;
+    }
+    .info h1 {
+        text-align: center;
+    }
+    .info {
+        text-align: center;
+    }
+}
+/* 1440px styles */
+@media screen and (min-width : 1151px) {
+    .mobile-image {
+        display: none;
+    }
+    .dektop-image {
+
+    }
+    .card {
+        width: 1110px;
+        height: 445px;
+        flex-direction: row;
+        display: flex;
+    }
+    .details {
+        margin-top: 80px;
+        margin-bottom:60px ;
+        margin-left: 70px;
+        margin-right: 120px;
+    }
+    .info h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .info p {
+        font-size: 17px;
+        margin: 0;
+    }
+    .stats {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stats h2 {
+        margin: 0;
+    }
+    .stats p {
+        margin: 0;
+        letter-spacing: 2px;
+        font-size: 10px;
+    }
+    .stats .companies {
+        margin-bottom: 30px;
+    }
+    .stats .template {
+        margin-bottom: 30px;
+    }
+}
