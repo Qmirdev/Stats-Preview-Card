@@ -1,16 +1,3 @@
-/* # Front-end Style Guide
-
-- Mobile: 375px
-- Desktop:
-
-- Dark desaturated blue (card background):
-- Soft violet (accent):hsl(277, 64%, 61%)
-
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
-*/
-
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
